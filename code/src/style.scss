@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anek+Malayalam&family=Anton&family=Averia+Sans+Libre:wght@300&family=Barlow:ital@1&family=Bungee+Spice&family=Fira+Sans:wght@200&family=Kufam&family=Mina&family=Montserrat:wght@100;800&family=Noto+Sans&family=Permanent+Marker&family=Philosopher&family=Play&family=Redressed&family=Roboto+Mono:wght@400;500&family=Roboto:wght@100;400;500&family=Supermercado+One&family=Tienne:wght@900&family=Ubuntu:wght@300&family=ZCOOL+QingKe+HuangYou&display=swap');
+$color1: black;
+$color2: rgb(28, 30, 46);
+$color3: rgb(36, 39, 59);
+$colorButton: rgb(238, 89, 20);
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+body{
+    background-color: $color1;
+}
+.parent{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+.baner{
+    width: 25%;
+    align-items: center;
+    padding: 2rem;
+    background-color: $color2;
+    border-radius: 2rem;
+    .baner__star{
+        margin: 1rem;
+    }
+    .baner__header{
+        margin: 0 0 1rem 0;
+    }
+    .baner__note{
+        margin: 0 0 1rem 0;
+        color: grey;
+    }
+    .baner__container_rate{
+        display: flex;
+        justify-content: space-between;
+        .baner__rate{
+            cursor: pointer;
+            border: none;
+            padding: 0.9rem;
+            border-radius: 2rem;
+            background-color: $color3;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+        }
+        .baner__rate--click{
+            cursor: pointer;
+            border: none;
+            padding: 0.9rem;
+            border-radius: 2rem;
+            background-color: rgb(153, 153, 153);
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+        }
+        .baner__rate:hover{
+            background-color: $colorButton;
+        }
+        .baner__rate:focus{
+            background-color: $colorButton;
+        }
+        @media all and (max-width: 950px) {
+        .baner__rate{
+            width: 40px;
+            height: 40px;
+            padding: 0.65rem;
+        }
+        }
+    }
+    .baner__submit{
+        display: block;
+        margin: 1.5rem 0 1.5rem 0;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        background-color: $colorButton;
+        width: 100%;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 2rem;
+    }
+    .baner__submit:hover{
+        background-color: white;
+        color: $colorButton;
+        cursor: pointer;
+    }
+}
+@media all and (max-width: 950px) {
+    .baner{
+        width: 80%;
+    }
+}
+}
